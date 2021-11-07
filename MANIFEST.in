@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include khutuut_addons *.css
+recursive-include khutuut_addons *.csv
+recursive-include khutuut_addons *.html
+recursive-include khutuut_addons *.ico
+recursive-include khutuut_addons *.js
+recursive-include khutuut_addons *.json
+recursive-include khutuut_addons *.md
+recursive-include khutuut_addons *.png
+recursive-include khutuut_addons *.py
+recursive-include khutuut_addons *.svg
+recursive-include khutuut_addons *.txt
+recursive-exclude khutuut_addons *.pyc
