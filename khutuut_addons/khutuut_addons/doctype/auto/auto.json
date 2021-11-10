@@ -1,0 +1,231 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2021-11-07 17:48:33.580788",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "item_name",
+  "column_break_2",
+  "item_group",
+  "section_break_4",
+  "brand",
+  "description",
+  "vehicle_attributes_section",
+  "engine_type",
+  "body_color",
+  "interior_color",
+  "indoor_seat_type",
+  "column_break_12",
+  "tire_size",
+  "external_cameras",
+  "camera_type",
+  "steering_wheel_control",
+  "number_of_airbags",
+  "column_break_18",
+  "number_of_seats",
+  "keys_type",
+  "external_sensors",
+  "outdoor_lights",
+  "bluetooth",
+  "column_break_24",
+  "sunroof",
+  "indoor_screen",
+  "touch_screen",
+  "instrument_cluster"
+ ],
+ "fields": [
+  {
+   "fieldname": "item_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Item Name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "item_group",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Item Group",
+   "options": "Item Group",
+   "reqd": 1
+  },
+  {
+   "fieldname": "brand",
+   "fieldtype": "Link",
+   "label": "Brand",
+   "options": "Brand"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Text",
+   "label": "Description"
+  },
+  {
+   "fieldname": "engine_type",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Engine Type",
+   "options": "Engine Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "body_color",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Body Color",
+   "options": "Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "interior_color",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Interior Color",
+   "options": "Color",
+   "reqd": 1
+  },
+  {
+   "fieldname": "indoor_seat_type",
+   "fieldtype": "Link",
+   "label": "Indoor Seat Type",
+   "options": "Indoor Seat Type",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_12",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "tire_size",
+   "fieldtype": "Select",
+   "label": "Tire size",
+   "options": "\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25",
+   "reqd": 1
+  },
+  {
+   "fieldname": "external_cameras",
+   "fieldtype": "Select",
+   "label": "External cameras",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "camera_type",
+   "fieldtype": "Select",
+   "label": "Camera Type",
+   "options": "\nFront & Back Camera\nBack Camera\n360 Camera",
+   "reqd": 1
+  },
+  {
+   "fieldname": "steering_wheel_control",
+   "fieldtype": "Select",
+   "label": "steering wheel control",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "number_of_airbags",
+   "fieldtype": "Select",
+   "label": "Number Of Airbags",
+   "options": "\n1\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_18",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "number_of_seats",
+   "fieldtype": "Select",
+   "label": "Number Of Seats",
+   "options": "\n2\n3\n4\n5\n6\n7\n8\n9\n10\n11\n12",
+   "reqd": 1
+  },
+  {
+   "fieldname": "keys_type",
+   "fieldtype": "Select",
+   "label": "Keys Type",
+   "options": "\nNormal Keys\nSmart Keys",
+   "reqd": 1
+  },
+  {
+   "fieldname": "external_sensors",
+   "fieldtype": "Select",
+   "label": "External sensors",
+   "options": "\nBack sensors\nFront sensors\nBack & Front sensors",
+   "reqd": 1
+  },
+  {
+   "fieldname": "outdoor_lights",
+   "fieldtype": "Link",
+   "label": "Outdoor Lights",
+   "options": "Outdoor Lights",
+   "reqd": 1
+  },
+  {
+   "fieldname": "bluetooth",
+   "fieldtype": "Select",
+   "label": "Bluetooth",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_24",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "sunroof",
+   "fieldtype": "Select",
+   "label": "Sunroof",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "indoor_screen",
+   "fieldtype": "Select",
+   "label": "Indoor screen",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "touch_screen",
+   "fieldtype": "Select",
+   "label": "Touch Screen",
+   "options": "\nYes\nNo",
+   "reqd": 1
+  },
+  {
+   "fieldname": "instrument_cluster",
+   "fieldtype": "Data",
+   "label": "Instrument Cluster"
+  },
+  {
+   "fieldname": "section_break_4",
+   "fieldtype": "Section Break"
+  },
+  {
+   "collapsible": 1,
+   "fieldname": "vehicle_attributes_section",
+   "fieldtype": "Section Break",
+   "label": "Vehicle Attributes"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2021-11-08 10:13:18.398587",
+ "modified_by": "Administrator",
+ "module": "Khutuut Addons",
+ "name": "Auto",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "track_changes": 1
+}
