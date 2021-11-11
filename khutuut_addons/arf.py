@@ -65,7 +65,7 @@ def fetch_arf_items(arf_name):
         arf_details.append(
             get_item_details({
                 "item_code": arf_item.item_code,
-                "company": "ETMS",
+                "company": "khutut",
                 "conversion_rate": 1,
                 "doctype": "Purchase Order"
             })
