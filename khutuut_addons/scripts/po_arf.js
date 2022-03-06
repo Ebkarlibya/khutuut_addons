@@ -37,7 +37,7 @@ frappe.ui.form.on('Purchase Order', {
 								row.stock_uom = arf_items[i].stock_uom;
 								row.price_list_rate = arf_items[i].price_list_rate;
 								row.last_purchase_rate = arf_items[i].last_purchase_rate;
-								row.rate = arf_items[i].rate;
+								row.rate = flt(1.00);
 								row.base_rate = arf_items[i].base_rate;
 								row.stock_uom_rate = arf_items[i].stock_uom_rate;
 								row.amount = arf_items[i].amount;
