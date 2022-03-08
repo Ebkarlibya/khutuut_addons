@@ -8,7 +8,14 @@ frappe.ui.form.on('Purchase Order', {
 						label: __("ARF Name"),
 						fieldname: "arfname",
 						fieldtype: "Link",
-						options: "Auto Requisition Form"
+						options: "Auto Requisition Form",
+						get_query: function() {
+							return {
+								filters: [
+									["docstatus", "=", "1"]
+								]
+							}
+						}
 					}
 				],
 				primary_action_label: __("Fetch ARF Items"),
