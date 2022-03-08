@@ -22,7 +22,7 @@
   {
    "fieldname": "posting_date",
    "fieldtype": "Date",
-   "label": "Posting Date"
+   "label": "Date"
   },
   {
    "fieldname": "auto",
