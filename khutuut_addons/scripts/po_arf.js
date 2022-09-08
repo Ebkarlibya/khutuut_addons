@@ -30,12 +30,13 @@ frappe.ui.form.on('Purchase Order', {
 							refresh_field("items");
 							
 							var arf_items = r.message;
-
+							// car_attributes_package
+							//
 							for (var i = 0; i < arf_items.length; i++) {
-								console.log(arf_items[i])
 								var row = frm.add_child("items");
 								row.item_code = arf_items[i].item_code;
 								row.item_name = arf_items[i].item_name;
+								row.car_attributes_package = arf_items[i].car_attributes_package;
 								row.description = arf_items[i].description;
 								row.image_view = arf_items[i].image;
 								row.qty = arf_items[i].qty

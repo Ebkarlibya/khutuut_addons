@@ -59,16 +59,18 @@ def on_trash(doc, method):
 @frappe.whitelist()
 def fetch_arf_items(arf_name):
     arf_items = frappe.get_all("Item", fields=["item_code"], filters={"created_by_arf": arf_name})
+    arf_form = frappe.get_all("Auto", fields=["car_attributes_package"], filters={"parent": arf_name})
     arf_details = []
     
-    for arf_item in arf_items:
-        arf_details.append(
-            get_item_details({
+    for idx, arf_item in enumerate(arf_items):
+        details = get_item_details({
                 "item_code": arf_item.item_code,
                 "company": "Khutu Almutawasit Co.",
                 "conversion_rate": 1,
                 "doctype": "Purchase Order"
             })
-        )
+        details["car_attributes_package"] = arf_form[idx].car_attributes_package
+
+        arf_details.append(details)
 
     return arf_details
